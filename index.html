@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Yo-Do App</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stay Productive </h1>
+            <button id="toggleTheme" class="theme-toggle">🌙 Switch to Dark Mode</button>
+        </header>
+
+        <div class="motivation">
+            <img id="motivationalImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhfb0z621QqGv6Uq3DXEiaoWQSBPb40fk-yhtN5xdwfX2vUramGho3j0jtwEWDuE8PH4&usqp=CAU" alt="Motivation">
+            <p id="motivationalText">“The secret of getting ahead is getting started.”</p>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <input type="text" id="taskDescriptionInput" placeholder="Add a description...">
+            <input type="date" id="taskDueDate" placeholder="Due Date">
+            <button id="addTaskButton">Add Task</button>
+        </div>
+
+        <div class="task-sections">
+            <section class="task-section pending-tasks">
+                <h2>Pending Tasks ⏳</h2>
+                <ul id="pendingTasks" class="task-list"></ul>
+            </section>
+        
+            <section class="task-section completed-tasks">
+                <h2>Completed Tasks ✅</h2>
+                <ul id="completedTasks" class="task-list"></ul>
+            </section>
+        
+            <section class="task-section favorite-tasks">
+                <h2>Favorite Tasks ⭐</h2>
+                <ul id="favoriteTasks" class="task-list"></ul>
+            </section>
+        
+            <section class="task-section important-tasks">
+                <h2>Important Tasks 🔥</h2>
+                <ul id="importantTasks" class="task-list"></ul>
+            </section>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
